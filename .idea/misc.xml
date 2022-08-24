@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/aghni/AndroidStudioProjects/Topic4/app/src/main/res/drawable-v24/buku_fg.xml" value="0.119" />
+        <entry key="..\:/Users/aghni/AndroidStudioProjects/Topic4/app/src/main/res/drawable/buku_bg.xml" value="0.119" />
+        <entry key="..\:/Users/aghni/AndroidStudioProjects/Topic4/app/src/main/res/drawable/ic__.xml" value="0.119" />
+        <entry key="..\:/Users/aghni/AndroidStudioProjects/Topic4/app/src/main/res/drawable/ic_acc_foreground.xml" value="0.1435" />
+        <entry key="..\:/Users/aghni/AndroidStudioProjects/Topic4/app/src/main/res/drawable/ic_baseline_account_circle_24.xml" value="0.1435" />
+        <entry key="..\:/Users/aghni/AndroidStudioProjects/Topic4/app/src/main/res/drawable/ic_buku_bg.xml" value="0.12" />
+        <entry key="..\:/Users/aghni/AndroidStudioProjects/Topic4/app/src/main/res/drawable/ic_launcher_background.xml" value="0.119" />
+        <entry key="..\:/Users/aghni/AndroidStudioProjects/Topic4/app/src/main/res/drawable/round_circle_qrispay.xml" value="0.1395" />
+        <entry key="..\:/Users/aghni/AndroidStudioProjects/Topic4/app/src/main/res/drawable/round_corner.xml" value="0.1435" />
+        <entry key="..\:/Users/aghni/AndroidStudioProjects/Topic4/app/src/main/res/drawable/round_corner_buttonprofile.xml" value="0.1395" />
+        <entry key="..\:/Users/aghni/AndroidStudioProjects/Topic4/app/src/main/res/drawable/round_corner_input.xml" value="0.1395" />
+        <entry key="..\:/Users/aghni/AndroidStudioProjects/Topic4/app/src/main/res/drawable/round_corner_inputwhite.xml" value="0.1505" />
+        <entry key="..\:/Users/aghni/AndroidStudioProjects/Topic4/app/src/main/res/drawable/round_corner_profile.xml" value="0.1395" />
+        <entry key="..\:/Users/aghni/AndroidStudioProjects/Topic4/app/src/main/res/drawable/round_corner_tamyiz.xml" value="0.1395" />
+        <entry key="..\:/Users/aghni/AndroidStudioProjects/Topic4/app/src/main/res/drawable/round_corner_topup.xml" value="0.1" />
+        <entry key="..\:/Users/aghni/AndroidStudioProjects/Topic4/app/src/main/res/layout/activity_main.xml" value="0.1814814814814815" />
+        <entry key="..\:/Users/aghni/AndroidStudioProjects/Topic4/app/src/main/res/layout/emailajdkbajkdna.xml" value="0.19519927536231885" />
+        <entry key="..\:/Users/aghni/AndroidStudioProjects/Topic4/app/src/main/res/layout/latihan_4_profile.xml" value="0.25" />
+        <entry key="..\:/Users/aghni/AndroidStudioProjects/Topic4/app/src/main/res/layout/latihan_5_topup.xml" value="0.25" />
+        <entry key="..\:/Users/aghni/AndroidStudioProjects/Topic4/app/src/main/res/layout/linear_horizontal.xml" value="0.21629213483146068" />
+        <entry key="..\:/Users/aghni/AndroidStudioProjects/Topic4/app/src/main/res/layout/prctc_3.xml" value="0.25" />
+        <entry key="..\:/Users/aghni/AndroidStudioProjects/Topic4/app/src/main/res/layout/prctice_linearlayout.xml" value="0.25" />
+        <entry key="..\:/Users/aghni/AndroidStudioProjects/Topic4/app/src/main/res/layout/prctice_relativelayout.xml" value="0.22" />
+        <entry key="..\:/Users/aghni/AndroidStudioProjects/Topic4/app/src/main/res/layout/relative_layout.xml" value="0.18" />
+        <entry key="..\:/Users/aghni/AndroidStudioProjects/Topic4/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

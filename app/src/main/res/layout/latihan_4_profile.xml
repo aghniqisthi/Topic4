@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@color/grey"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/layoutbiru"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/topbgblue"
+            android:src="@drawable/round_corner_profile"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Profil"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-black"
+                android:textSize="50sp"
+                android:textColor="@color/lightblue"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:text="e"
+                android:layout_marginRight="75dp"
+                android:textColor="@color/orange"
+                android:fontFamily="sans-serif-black"
+                android:textStyle="bold"
+                android:textSize="50sp"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <ImageView
+                android:src="@drawable/qrcode"
+                android:layout_alignParentRight="true"
+                android:layout_width="70dp"
+                android:layout_height="70dp"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:text="Your username"
+        android:textSize="16sp"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:layout_margin="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:src="@drawable/round_corner_input" />
+
+        <LinearLayout
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="13dp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="ID User"
+                android:layout_marginRight="25dp"
+                android:fontFamily="sans-serif-black"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:layout_marginLeft="200dp"
+                android:text="null"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@drawable/round_corner_input"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+
+        <LinearLayout
+            android:layout_marginLeft="25dp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Email"
+                android:fontFamily="sans-serif-black"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_marginTop="13dp"
+                android:layout_marginRight="35dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ImageButton
+        android:src="@mipmap/ic_tekslogout_foreground"
+        android:background="@drawable/round_corner_buttonprofile"
+        android:layout_margin="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+    <RelativeLayout
+        android:layout_marginTop="125dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="170dp">
+
+        <!--        HOME KIRI -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginLeft="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/home"
+                android:layout_width="35dp"
+                android:layout_height="25dp"
+                android:backgroundTint="@color/white"
+                android:src="@drawable/ic_outline_home_24" />
+
+            <TextView
+                android:id="@+id/tekshome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/home"
+                android:text="Home" />
+        </LinearLayout>
+
+<!--        TEKS PAY TENGAH -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="125dp"
+            android:layout_marginTop="25dp"
+            android:text="Pay" />
+
+<!--        PROFILE -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginLeft="125dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:src="@drawable/ic_outline_account_circle_24" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profile"
+                android:textColor="@color/blue" />
+        </LinearLayout>
+    </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/qrscan"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/round_circle_qrispay"
+            android:src="@mipmap/ic_qrscan_foreground" />
+
+    </RelativeLayout>
+
+</LinearLayout>

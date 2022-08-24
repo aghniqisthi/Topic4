@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pokemon Battle Game</title>
+
+        <style type="text/css">
+
+          body {
+          font-family: monospace;
+          font-size: 20px;
+          }
+
+          .game {
+          position: relative;
+          background-image: url("https://bit.ly/pokemonbg");
+          background-size: 100% 100%;
+          border: 3px solid black;
+          border-radius: 8px 8px 0 0;
+          height: 540px;
+          width: 1344px;
+          }
+
+          .player {
+          position: relative;
+          height: 192px;
+          }
+
+          .player .stats {
+          position: absolute;
+          top: -100px;
+          right: 820px;
+          width: 320px;
+          }
+
+          .player .pokemon {
+          position: absolute;
+          left: 250px;
+          top: 50px;
+          width: 160px;
+          }
+
+          .opponent {
+          position: relative;
+          height: 300px;
+          }
+
+          .opponent .stats {
+          position: absolute;
+          top: 96px;
+          left: 850px;
+          width: 320px;
+          }
+
+          .opponent .pokemon {
+          position: absolute;
+          top: 230px;
+          right: 270px;
+          width: 100px;
+          }
+
+          .box {
+          position: fixed;
+          top: 554px;
+          padding: 8px;
+          background: #333;
+          border: 3px solid black;
+          border-top: none;
+          border-radius: 0 0 8px 8px;
+          color: #fff;
+          height: 115px;
+          width: 1325px;
+          }
+
+          .box .message {
+          position: relative;
+          float: left;
+          font-size: 24px;
+          width: 50%;
+          }
+
+          .box .continue {
+          position: absolute;
+          margin-top: 30px;
+          float: left;
+          width: 25%;
+          height: 100%;
+          }
+
+          .box .continue button {
+          position: relative;
+          float: left;
+          background: #666;
+          border: 3px solid #888;
+          border-radius: 4px;
+          color: #fff;
+          font-family: monospace;
+          font-size: 20px;
+          line-height: 14px;
+          margin: 4px;
+          padding: 16px;
+          outline: none ;
+          }
+
+          .box .continue button:hover {
+          background: #777;
+          border-color: #999;
+          }
+
+          .box .continue button:active {
+          background: #555;
+          border-color: #666;
+          }
+
+          .box .actions {
+          position: relative;
+          float: left;
+          width: 50%;
+          height: 100%;
+          }
+
+          .box .actions button {
+          position: relative;
+          float: left;
+          background: #666;
+          border: 3px solid #888;
+          border-radius: 4px;
+          color: #fff;
+          font-family: monospace;
+          font-size: 20px;
+          line-height: 14px;
+          margin: 4px;
+          padding: 16px;
+          width: calc(50% - 8px);
+          height: calc(50% - 8px);
+          outline: none;
+          }
+
+          .box .actions button:hover {
+          background: #777;
+          border-color: #999;
+          }
+
+          .box .actions button:active {
+          background: #555;
+          border-color: #666;
+          }
+            
+          .stats {
+          background: #111;
+          border: 2px solid black;
+          border-radius: 8px;
+          color: white;
+          padding: 12px;
+          }
+
+          .stats .pokeballs {
+          position: relative;
+          display: inline-block;
+          vertical-align: middle;
+          }
+
+          .stats .pokeballs .pokeball {
+          position: relative;
+          float: left;
+          background-image: url("https://bit.ly/pokeballimg");
+          background-size: 100% 100%;
+          width: 25px;
+          height: 25px;
+          }
+
+          .stats .hp-count:before {
+          content: 'HP: '
+          }
+
+          .stats .hp-count {
+          float: right;
+          }
+
+          .stats .name {
+          font-weight: bold;
+          }
+
+          .stats .level:before {
+          content: "- LVL "
+          }
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <div class="game">
+
+          <div class="opponent">
+            
+            <img class="pokemon" src="https://img.pokemondb.net/sprites/black-white/anim/normal/rapidash.gif" alt="Rapidash"/>
+              
+              <div class="stats">
+                
+                <div class="top">
+                  <div class="pokeballs">
+                    <div class="pokeball"></div>
+                    <div class="pokeball"></div>
+                    <div class="pokeball"></div>
+                    <div class="pokeball"></div>
+                    <div class="pokeball"></div>
+                  </div>
+                  <div id = "opponentHP" class="hp-count">100</div>
+                </div>
+                <span class="name">Rapidash</span>
+                <span class="level">4</span>
+            
+              </div>
+              
+          </div>
+
+          <div class="player">
+            
+            <img class="pokemon" src="https://img.pokemondb.net/sprites/black-white/anim/back-shiny/aerodactyl.gif" alt="Aerodactyl"/>
+              
+              <div class="stats">
+                
+                <div class="top">
+                  <div class="pokeballs">
+                    <div class="pokeball"></div>
+                    <div class="pokeball"></div>
+                    <div class="pokeball"></div>
+                    <div class="pokeball"></div>
+                    <div class="pokeball"></div>
+                  </div>
+                  <div id = "playerHP" class="hp-count">100</div>
+                </div>
+                <span class="name">Aerodactyl</span>
+                <span class="level">8</span>
+              
+              </div>
+
+          </div>
+
+          <div class="box">
+            <div id = "message" class="message">What should Aerodactyl do?</div> 
+            
+            <div class="actions">
+              <button onclick = "">Hyper Beem</button>
+              <button onclick = "">Rock Slide</button>
+              <button onclick = "">Iron Head</button>
+              <button onclick = "">Mega HP</button>
+            </div>
+            
+            <div class = "continue"><br>
+              <button onclick = "">Continue</button>
+            
+            </div>
+          </div>
+
+      <script>
+
+      </script>
+
+    </body>
+
+</html>

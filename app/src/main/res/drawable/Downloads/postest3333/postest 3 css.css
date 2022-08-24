@@ -1,0 +1,56 @@
+.header{
+    text-align: center;
+    padding: 5%;
+    line-height: 75%;
+    font-family: Verdana;
+    background-color: #363a43;
+    color: aliceblue;
+}
+
+#header-background{
+    background-image: url(designheader.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    
+}
+
+.film{
+    width: 100%;
+    display: grid;
+    text-align: justify;
+    margin-inline: 20px;
+}
+
+.film.menu{
+    width: 10%;
+    float: left;
+    position: absolute;
+}
+
+.film.konten1{
+    width: 30%;
+    float: left;
+}
+
+.film.konten2{
+    width: 30%;
+    float: center;
+}
+
+.film.konten3{
+    width: 30%;
+    float: right;
+}
+
+.footer{
+    background-color: #33353d;
+    padding: 20px 20px 20px 20px;
+    font-family: sans-serif;
+    text-align: center;
+    font-size: small;
+    position: bottom;
+    width: 100%;
+}
+
+

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create four equal columns that floats next to each other */
+.dosenitkolom {
+  float: left;
+  width: 25%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.dosenitrow:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+</head>
+<body>
+
+<h2>Four Equal Columns</h2>
+
+<div class="dosenitrow">
+  <div class="dosenitkolom" style="background-color:#aaa;">
+    <h2>Kolom 1</h2>
+    <p>Paragraf atau text Javascript di sini</p>
+  </div>
+  <div class="dosenitkolom" style="background-color:#bbb;">
+    <h2>Kolom 2</h2>
+    <p>Paragraf atau text html di sini.</p>
+  </div>
+  <div class="dosenitkolom" style="background-color:#ccc;">
+    <h2>Kolom 3</h2>
+    <p>Paragraf atau text javascript di sini</p>
+  </div>
+  <div class="dosenitkolom" style="background-color:#ddd;">
+    <h2>Kolom 4</h2>
+    <p>Paragraf atau text css di sini.</p>
+  </div>
+</div>
+
+</body>
+</html>
